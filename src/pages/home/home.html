@@ -20,23 +20,43 @@
 
     <ion-list>
       
- <ion-item><ion-icon name="inf" item-start></ion-icon>January</ion-item>    
-<ion-item>Febuary</ion-item>
-<ion-item>March</ion-item>
-<ion-item>April</ion-item>
-<ion-item>May</ion-item>
-<ion-item>June</ion-item>
-<ion-item>July</ion-item>
-<ion-item detail-push>August</ion-item>
-<ion-item detail-push >september</ion-item>
-<button detail-push ion-item (click)="buttonClick()">
-    Button Item
+      <button detail-push ion-item (click)="openJanuary()"><ion-icon name="disc" item-end></ion-icon>
+        January
+      </button>   
+ <button detail-push ion-item (click)="openFebruary()"><ion-icon name="disc"></ion-icon>
+  Febuary
+</button>
+<button detail-push ion-item (click)="buttonClick()"><ion-icon name="disc"></ion-icon>
+  March
+</button>
+<button detail-push ion-item (click)="buttonClick()"><ion-icon name="disc"></ion-icon>
+  April
+</button>
+<button detail-push ion-item (click)="buttonClick()"><ion-icon name="disc"></ion-icon>
+  May
+</button>
+<button detail-push ion-item (click)="buttonClick()"><ion-icon name="disc"></ion-icon>
+  June
+</button>
+<button detail-push ion-item (click)="buttonClick()"><ion-icon name="disc"></ion-icon>
+  July
+</button>
+<button detail-push ion-item (click)="buttonClick()"><ion-icon name="disc"></ion-icon>
+  August
+</button>
+<button detail-push ion-item (click)="buttonClick()"><ion-icon name="disc"></ion-icon>
+  September
+</button>
+<button detail-push ion-item (click)="buttonClick()"><ion-icon name="disc"></ion-icon>
+   October
   </button>
   
   <a ion-item href="https://www.ionicframework.com">
-    Anchor Item
+    <ion-icon name="disc"></ion-icon> November
   </a>
-<!--ion-item>October</ion-item>
+  <a ion-item href="https://www.ionicframework.com">
+    <ion-icon name="disc"></ion-icon>December
+  </a><!--ion-item>October</ion-item>
 <ion-item>November</ion-item>
 <ion-item>December</ion-item-->  
   </ion-list>
