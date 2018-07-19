@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 
 
+
 /*
   Generated class for the CalenderDataProvider provider.
 
@@ -12,7 +13,7 @@ import {Observable} from 'rxjs/Observable';
 @Injectable()
 export class CalenderDataProvider {
 
-  public items:any;
+  public items:any=[];
 
   constructor(public http: HttpClient) {
    // console.log('Hello CalenderDataProvider Provider');
@@ -22,11 +23,17 @@ export class CalenderDataProvider {
   getCalenderData(){
     
     let data: Observable<any> =this.http.get('https://jsonplaceholder.typicode.com/photos');
-    
+
+
     data.subscribe(result =>{
-      this.items= result;
-     // console.log(data);
+      //this.items= result;
+console.log(result['title']);
+     console.log(result)
+    
+    
     });
+    // this.items = this.getCalenderData();
+     //return
   }
 
 }

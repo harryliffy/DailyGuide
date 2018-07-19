@@ -15,11 +15,17 @@
 
 <ion-content padding>
 
+    <ion-list>
+        <ion-item *ngFor="let post of posts">
+          <img [src]="post.data.url" />
+        </ion-item>
+      </ion-list>
+
     <ion-card *ngFor="let item of items ">
-        <img [src]="item.thumbnailUrl"/>
+        <img [src]="items.thumbnailUrl"/>
         <ion-card-content>
           <ion-card-title>
-            {{item.title}}
+            {{items.title}}
             </ion-card-title>
           <p>
             The most popular industrial group ever, and largely
@@ -28,6 +34,10 @@
         </ion-card-content>
       </ion-card>
 
-
+      <ul>
+        <li *ngFor="let item of items">
+          {{ hero }}
+        </li>
+      </ul>
 
 </ion-content>

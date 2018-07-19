@@ -11,7 +11,7 @@ import { FebruaryPage } from '../pages/february/february';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { HttpClientModule } from '@angular/common/http';
-import {Observable} from 'rxjs/Observable';
+
 import { CalenderDataProvider } from '../providers/calender-data/calender-data';
 
 @NgModule({
@@ -42,4 +42,8 @@ import { CalenderDataProvider } from '../providers/calender-data/calender-data';
     CalenderDataProvider
   ]
 })
-export class AppModule {}
+export class AppModule {
+
+
+  
+}
