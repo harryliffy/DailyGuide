@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { January1Page } from '../january1/january1';
 //import { HomePage } from '../home/home';
 
 /**
@@ -21,6 +22,12 @@ export class JanuaryPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad JanuaryPage');
+  }
+
+
+  openJanuary1(){
+this.navCtrl.push(January1Page);
+
   }
 
 }

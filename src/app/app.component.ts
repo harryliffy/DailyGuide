@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 
-import { FebruaryPage } from '../pages/february/february';
+// import { FebruaryPage } from '../pages/february/february';
 import { ListPage } from '../pages/list/list';
 
 @Component({
