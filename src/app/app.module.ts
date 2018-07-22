@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { AboutPage } from '../pages/about/about';
 import { JanuaryPage} from '../pages/january/january';
 import { January1Page} from '../pages/january1/january1';
 import { ListPage } from '../pages/list/list';
@@ -19,10 +20,12 @@ import { CalenderDataProvider } from '../providers/calender-data/calender-data';
   declarations: [
     MyApp,
     HomePage,
+    AboutPage,
     ListPage,
     JanuaryPage,
     January1Page,
     FebruaryPage
+    
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,7 @@ import { CalenderDataProvider } from '../providers/calender-data/calender-data';
   entryComponents: [
     MyApp,
     HomePage,
+    AboutPage,
     ListPage,
     JanuaryPage,
     January1Page,

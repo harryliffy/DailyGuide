@@ -12,6 +12,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-january1',
   templateUrl: 'january1.html',
+  
 })
 export class January1Page {
 
