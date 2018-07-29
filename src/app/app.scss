@@ -15,4 +15,15 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
-
+.md .glass{
+    background-color:#f2f6ffe8;
+    color:#86bacada;
+}
+.glass:hover{
+    background-color:#86bacada;
+    color:#f2f6ff;
+}
+.md .glass-10{
+    background-color:#eeeeeed2;
+    color:#86bacada;
+}

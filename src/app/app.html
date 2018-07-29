@@ -4,22 +4,27 @@
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header-->
-
-  <ion-content  style="background:linear-gradient(to right, #234567 ,#06b6b6);">
-      <ion-list style="background:linear-gradient(to right, #234567 ,#06b6b6);">
-          <ion-item>
+  <ion-content style="background-color: #c0c0c0f3;" >
+<ion-list style="background-color: #c0c0c0f3;" >
+      <!--ion-list style="background:linear-gradient(to right, #234567d5 ,#06b6b6ab)!important;"-->
+          <ion-item class="glass-10">
             <ion-thumbnail item-start>
               <img style="border-radius:40px;" src="../assets/imgs/users.jpg">
             </ion-thumbnail>
-            <h2>My Neighbor Totoro</h2>
-            <p>Hayao Miyazaki • 1988</p>
-            <button ion-button clear item-end>View</button>
+            <b><h2>My Account</h2></b>
+            <p ion-text color="baseblue" >harryliffy@gmail.com</p>
+            <button color="baseblue" ion-button clear item-end></button>
           </ion-item>
      <hr>
-      <button ion-item clear><ion-icon name="Home"></ion-icon>Menus</button>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+      <!--button  class="glass" ion-item clear><ion-icon  name="disc" item-start></ion-icon>Menus</button-->
+      <button (click)="navHomePage()"  class="glass" ion-item clear><ion-icon  name="home" item-start></ion-icon>Home</button>
+      <button  class="glass" ion-item clear><ion-icon  name="book" item-start></ion-icon>Reading plan</button>
+      <button  class="glass" ion-item clear><ion-icon  name="search" item-start></ion-icon>Search</button>
+      <button  (click)="navAboutPage()" class="glass" ion-item clear><ion-icon  name="information" item-start></ion-icon>About</button>
+      <button  class="glass" ion-item clear><ion-icon  name="settings" item-start></ion-icon>Settings</button>
+         <!--button class="glass" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
-      </button>
+      </button-->
     </ion-list>
   </ion-content>
 
