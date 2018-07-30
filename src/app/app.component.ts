@@ -10,6 +10,8 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 import { LoginPage } from '../pages/login/login';
+import { MarchPage } from '../pages/march/march';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -51,6 +53,11 @@ export class MyApp {
 
   navHomePage(){
     this.nav.setRoot(HomePage);
+    this.menuCtrl.toggle();
+  }
+
+    navMarchPage(){
+    this.nav.setRoot(MarchPage);
     this.menuCtrl.toggle();
   }
   navAboutPage(){
