@@ -1,0 +1,17 @@
+
+/*********************add mobile header icon **************/
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-buttons left>
+        <button ion-button icon-only>
+          <ion-icon name="chatboxes"></ion-icon>
+        </button>
+    </ion-buttons>
+    <ion-title>Title</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only><ion-icon name="notifications"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+/*********************add mobile header icon **************/
