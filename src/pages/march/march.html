@@ -18,6 +18,7 @@
 <ion-list>
 <ion-item *ngFor="let item of data" >
 <p>{{item.body}}</p>
+<button ion-button clear item-right (click)="viewItem(item)" >view</button>
 </ion-item>
 </ion-list>
 

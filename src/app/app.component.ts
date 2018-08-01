@@ -11,8 +11,8 @@ import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 import { LoginPage } from '../pages/login/login';
 import { MarchPage } from '../pages/march/march';
-
-
+// import { FebruaryPage} from  '../pages/february/february';
+/* */
 @Component({
   templateUrl: 'app.html'
 })

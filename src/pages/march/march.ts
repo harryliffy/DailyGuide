@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {HttpClient} from '@angular/common/http';
+import { Observable} from 'rxjs';
+import { DetailsPage} from '../details/details';
 
 /**
  * Generated class for the MarchPage page.
@@ -25,7 +27,7 @@ export class MarchPage {
       data.subscribe(result => {
         this.data=result;
         
-        console.log(result['0']);
+        console.log(result['0'].body);
       });
  }
   ionViewDidLoad() {
@@ -33,6 +35,12 @@ export class MarchPage {
   //
   this.getData();
   
+    }
+    viewitem(item){
+      console.log(item);
+      /* this.navCtrl.push(DetailsPage, {
+        item:item
+      }); */
     }
 
 }

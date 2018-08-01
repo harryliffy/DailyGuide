@@ -11,6 +11,7 @@ import { January1Page} from '../pages/january1/january1';
 import { ListPage } from '../pages/list/list';
 import { FebruaryPage } from '../pages/february/february';
 import { MarchPage } from '../pages/march/march';
+import {DetailsPage } from '../pages/details/details';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -28,7 +29,8 @@ import { CalenderDataProvider } from '../providers/calender-data/calender-data';
     January1Page,
     FebruaryPage,
     LoginPage,
-    MarchPage
+    DetailsPage,
+       MarchPage
     
   ],
   imports: [
@@ -46,6 +48,7 @@ import { CalenderDataProvider } from '../providers/calender-data/calender-data';
     January1Page,
     FebruaryPage,
     LoginPage,
+    DetailsPage,
     MarchPage
   ],
   providers: [
