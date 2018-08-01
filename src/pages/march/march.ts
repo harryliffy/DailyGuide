@@ -36,11 +36,13 @@ export class MarchPage {
   this.getData();
   
     }
-    viewitem(item){
-      console.log(item);
-      /* this.navCtrl.push(DetailsPage, {
-        item:item
-      }); */
+    showitem(item){
+    
+      
+       this.navCtrl.push(DetailsPage, {
+         data:item
+       });
+        // console.log(item);
     }
 
 }
