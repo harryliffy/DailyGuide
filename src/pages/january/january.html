@@ -29,19 +29,19 @@
 </ion-header>
 
 <ion-content class="jan-glass" >
-  <ion-card>
-    
-    <button class="months-glass" (click)="openJanuary1()" ion-item>
-      <ion-avatar item-start>
-        <img src="../../assets/imgs/number1.png">
-      </ion-avatar>
-      <h2>January 1</h2>
-      <p>  Beginning with God in thanksgiving</p>
+    <ion-card *ngFor="let item of data" >
       
-    </button>
-  </ion-card>
+      <button class="months-glass"  (click)="showitem(item)"  ion-item>
+        <ion-avatar item-start>
+          <img src="../../assets/imgs/number{{item.id}}.png">
+        </ion-avatar>
+        <h2>{{item.month}} &nbsp;{{item.id}} </h2>
+        <p> {{item.title}}</p>
+        
+      </button>
+    </ion-card>
   
-  <ion-card>
+  <!--ion-card>
     
     <button class="months-glass" ion-item>
       <ion-avatar item-start>
@@ -436,7 +436,7 @@
       <p>The driver's seat</p>
     </button>
     
-  </ion-card> 
+  </ion-card--> 
   
 </ion-content>
 

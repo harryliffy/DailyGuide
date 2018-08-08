@@ -13,21 +13,20 @@
 </ion-header>
 
 
-<ion-content padding>
-
-  <ion-card>
-    
-    <button (click)="openFebruary1()" ion-item>
-      <ion-avatar item-start>
-        <img src="../../assets/imgs/number1.png">
-      </ion-avatar>
-      <h2>February 1</h2>
-      <p>The choice</p>
+<ion-content class="jan-glass" >
+    <ion-card *ngFor="let item of data" >
       
-    </button>
-  </ion-card>
+      <button class="months-glass"  (click)="showitem(item)"  ion-item>
+        <ion-avatar item-start>
+          <img src="../../assets/imgs/number{{item.id}}.png">
+        </ion-avatar>
+        <h2>{{item.month}} &nbsp;{{item.id}} </h2>
+        <p> {{item.title}}</p>
+        
+      </button>
+    </ion-card>
   
-  <ion-card>
+  <!--ion-card>
     
     <ion-item>
       <ion-avatar item-start>
@@ -388,6 +387,6 @@
 
     </ion-item>
     
-  </ion-card>
+  </ion-card-->
 
 </ion-content>

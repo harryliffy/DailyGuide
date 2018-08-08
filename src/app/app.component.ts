@@ -11,7 +11,8 @@ import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 import { LoginPage } from '../pages/login/login';
 import { MarchPage } from '../pages/march/march';
-// import { FebruaryPage} from  '../pages/february/february';
+
+import { MonthPage } from '../pages/month/month';// import { FebruaryPage} from  '../pages/february/february';
 /* */
 @Component({
   templateUrl: 'app.html'
@@ -64,5 +65,9 @@ export class MyApp {
     this.nav.setRoot(AboutPage);
     this.menuCtrl.toggle();
     
+  }
+ navMonthPage(){
+    this.nav.setRoot(MonthPage);
+    this.menuCtrl.toggle();
   }
 }

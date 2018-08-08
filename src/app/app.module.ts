@@ -12,6 +12,7 @@ import { ListPage } from '../pages/list/list';
 import { FebruaryPage } from '../pages/february/february';
 import { MarchPage } from '../pages/march/march';
 import {DetailsPage } from '../pages/details/details';
+import { MonthPage } from '../pages/month/month';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,7 +31,8 @@ import { CalenderDataProvider } from '../providers/calender-data/calender-data';
     FebruaryPage,
     LoginPage,
     DetailsPage,
-       MarchPage
+    MarchPage,
+    MonthPage
     
   ],
   imports: [
@@ -49,7 +51,8 @@ import { CalenderDataProvider } from '../providers/calender-data/calender-data';
     FebruaryPage,
     LoginPage,
     DetailsPage,
-    MarchPage
+    MarchPage,
+    MonthPage
   ],
   providers: [
     StatusBar,

@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { January1Page } from '../january1/january1';
+import {HttpClient} from '@angular/common/http';
+import { Observable} from 'rxjs';
+import { DetailsPage} from '../details/details';
+// import { January1Page } from '../january1/january1';
 //import { HomePage } from '../home/home';
 
 /**
@@ -16,18 +19,41 @@ import { January1Page } from '../january1/january1';
   templateUrl: 'january.html',
 })
 export class JanuaryPage {
+  data:any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient) {
+    
   }
+ getData(){
 
+  //'https://jsonplaceholder.typicode.com/posts
+  /*this.http.get('assets/publication2018.json').map(res => res.json()).subscribe(result => {
+    this.data = result;
+    console.log(this.data);
+}); */
+
+
+
+    let data:Observable<any> = this.http.get('../../assets/data/january2018.json');
+      data.subscribe(result => {
+        this.data=result;
+        
+        console.log(this.data);
+      }); 
+ }
   ionViewDidLoad() {
-    console.log('ionViewDidLoad JanuaryPage');
-  }
-
-
-  openJanuary1(){
-this.navCtrl.push(January1Page);
-
-  }
+  console.log('ionViewDidLoad MarchPage'); 
+  //
+  this.getData();
+  
+    }
+    showitem(item){
+    
+      
+       this.navCtrl.push(DetailsPage, {
+         data:item
+       });
+        // console.log(item);
+    }
 
 }

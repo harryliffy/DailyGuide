@@ -23,15 +23,24 @@ export class MarchPage {
     
   }
  getData(){
-      let data:Observable<any> = this.http.get('https://jsonplaceholder.typicode.com/posts');
+
+  //'https://jsonplaceholder.typicode.com/posts
+  /*this.http.get('assets/publication2018.json').map(res => res.json()).subscribe(result => {
+    this.data = result;
+    console.log(this.data);
+}); */
+
+
+
+    let data:Observable<any> = this.http.get('../../assets/data/publication2018.json');
       data.subscribe(result => {
         this.data=result;
         
-        console.log(result['0'].body);
-      });
+        console.log(this.data);
+      }); 
  }
   ionViewDidLoad() {
-    //console.log('ionViewDidLoad MarchPage');
+  console.log('ionViewDidLoad MarchPage');
   //
   this.getData();
   
