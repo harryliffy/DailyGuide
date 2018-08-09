@@ -1,12 +1,39 @@
 page-home {
-
-
+.share{
+//display: inline-block;
+width: 50px;
+color:white;
+font-size: 30px;
+ // border-radius:50px;
+  background:#1b3d6b ;
+        position: absolute;
+        bottom: 20px;
+        right: 15px;
+        border-radius: 33px;
+        font-size: 16px;
+       // font-family: Tahoma, Verdana, Segoe, sans-serif;
+        overflow: hidden;
+        padding: 5px;
+      
+      
+}
+.welcome{
+    background-image:url(../assets/imgs/home.png);
+    background-repeat: "no-repeat";
+    background-position:center;
+position: relative;
+z-index: 2;
+    background-size:contain;
+}
     .months-glass{
         background-color:#ffffffe8 ;
-        color:#86baca;
+        color:#1b3d6b;
+        border-color: #1b3d6b;
+        font-weight: 700;
+
     }
  .months-glass:hover{
-        background-color:#86bacada !important;
+        background-color:#1b3d6b !important;
    // background-color:#0d537cf5 !important;
     color:#ffffff;
 }

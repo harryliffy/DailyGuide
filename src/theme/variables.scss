@@ -4,8 +4,15 @@
 // Font path is used to include ionicons,
 // roboto, and noto sans fonts
 $font-path: "../assets/fonts";
+/*
+ @font-face{
+   font-family: "segoeui";
+   src: ("../assets/fonts/segoeuib.ttf")
 
-
+ }
+ *{
+   font-family: "segoeui";
+ } */
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
 // http://ionicframework.com/docs/theming/rtl-support/

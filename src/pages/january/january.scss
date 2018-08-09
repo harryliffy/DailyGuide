@@ -1,5 +1,21 @@
 page-january {
- 
+ .circle{
+    width: 50px;
+    height: 50px;
+    color:white;
+    font-size: 20px;
+     // border-radius:50px;
+      background:#1b3d6b ;
+          //  position: absolute;
+          //  bottom: 20px;
+         //   right: 15px;
+            border-radius: 33px;
+            font-size: 16px;
+           font-family: Tahoma, Verdana, Segoe, sans-serif;
+            //overflow: hidden;
+           // padding: 5px;
+          
+ }
     .jan-glass{
         background-color:#ffffffe8 ;
         color:#21518f !important;
@@ -11,16 +27,17 @@ page-january {
 }
  .months-glass,h2,{
 
-    color:#86baca !important;
+    color:#1b3d6b !important;
+    font-weight: 700;
 }
 
  .months-glass,p{
 
-    color:#3f4b4e !important;
+    color:#243dcc !important;
 }
- .months-glass:hover{
-        background-color:#d9edf38f !important;
-    color:#12161b;
+ .months-glass:hover , .months-glass:hover>h2:hover{
+        background-color:#8696f18f !important;
+    color:#cad8eb;
 }
     }
 

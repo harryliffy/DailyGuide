@@ -8,21 +8,37 @@
 <ion-list style="background-color: #c0c0c0f3;" >
       <!--ion-list style="background:linear-gradient(to right, #234567d5 ,#06b6b6ab)!important;"-->
           <ion-item class="glass-10">
-            <ion-thumbnail item-start>
-              <img style="border-radius:40px;" src="../assets/imgs/users.jpg">
-            </ion-thumbnail>
-            <b><h2>My Account</h2></b>
-            <p ion-text color="baseblue" >harryliffy@gmail.com</p>
-            <button color="baseblue" ion-button clear item-end></button>
-          </ion-item>
-     <hr>
-      <!--button  class="glass" ion-item clear><ion-icon  name="disc" item-start></ion-icon>Menus</button-->
-      <button (click)="navHomePage()"  class="glass" ion-item clear><ion-icon  name="home" item-start></ion-icon>Home</button>
-      <button (click)="navMonthPage()"   class="glass" ion-item clear><ion-icon  name="book" item-start></ion-icon>Reading plan</button>
-      <button  class="glass" ion-item clear><ion-icon  name="search" item-start></ion-icon>Search</button>
+            <ion-grid>
+              <ion-row>
+
+              <ion-col item-start></ion-col>
+              <ion-col>
+                  <ion-thumbnail center>
+                    <img style="border-radius:40px;" src="../assets/imgs/users.jpg">
+                  </ion-thumbnail></ion-col>
+              <ion-col item-end></ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col item-start></ion-col>
+                <ion-col text-center>
+                    <h2 center>John Doe</h2>
+                    <p>Harryliffy@gmail.com</p>
+      
+                </ion-col>
+                <ion-col item-end></ion-col>
+            </ion-row>
+            </ion-grid>
      
-      <button  (click)="navAboutPage()" class="glass" ion-item no-line clear><ion-icon  name="information" item-start></ion-icon>About</button>
-      <button (click)="navMarchPage()"  class="glass" ion-item clear><ion-icon  name="settings" item-start></ion-icon>Settings</button>
+     
+          </ion-item>
+     
+      <!--button  class="glass" ion-item clear><ion-icon  name="disc" item-start></ion-icon>Menus</button-->
+      <button (click)="navHomePage()"  class="glass" ion-item clear no-lines><ion-icon  name="home" item-start></ion-icon>Home</button>
+      <button (click)="navMonthPage()"   class="glass" ion-item clear no-lines><ion-icon  name="book" item-start></ion-icon>Reading plan</button>
+      <button  class="glass" ion-item clear no-lines><ion-icon  name="search" item-start></ion-icon>Search</button>
+     
+      <button  (click)="navAboutPage()" class="glass" ion-item no-line clear no-lines><ion-icon  name="information" item-start></ion-icon>About</button>
+      <button (click)="navMarchPage()"  class="glass" ion-item clear no-lines><ion-icon  name="settings" item-start></ion-icon>Settings</button>
          <!--button class="glass" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button-->

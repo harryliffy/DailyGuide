@@ -14,8 +14,8 @@
   
 </ion-header-->
 <ion-header>
-  <ion-navbar >
-    <ion-title>January 2018</ion-title>
+  <ion-navbar color="baseblue">
+    <ion-title > January 2018</ion-title>
      <ion-buttons right>
         <button ion-button icon-only>
           <ion-icon name="search"></ion-icon>
@@ -33,7 +33,8 @@
       
       <button class="months-glass"  (click)="showitem(item)"  ion-item>
         <ion-avatar item-start>
-          <img src="../../assets/imgs/number{{item.id}}.png">
+          <button ion-item class="circle">{{item.id}}</button>
+          <!--img src="../../assets/imgs/number{{item.id}}.png"-->
         </ion-avatar>
         <h2>{{item.month}} &nbsp;{{item.id}} </h2>
         <p> {{item.title}}</p>

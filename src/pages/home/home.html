@@ -1,20 +1,29 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="baseblue">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home</ion-title>
+    
+    <ion-title center>Daily Guide</ion-title>
+   
   </ion-navbar>
 </ion-header>
 
 <ion-content >
   <!--h3 text-center >Home</h3-->
-
+<!-- home slider 1-->
   <ion-slides pager>
-
-    <ion-slide style="background-image:url(../assets/imgs/home.png);background-size:contain;">
+<!--slider 1 background image and button-->
+    <ion-slide class="welcome" >
       <!--h2>Slide 1</h2-->
+      <button class="share" padding><ion-icon name="compass"></ion-icon></button>
     </ion-slide>
+
+
+<!--end slider 1 background image and button-->
+
+<!--Slider 1 backgroung image and button-->
+
  <!-- #39a89ff3;  -->
     <ion-slide style="background-color: #c0c0c0f3;" >
 
@@ -61,7 +70,6 @@
 <ion-item>December</ion-item-->  
   </ion-list>
     </ion-slide>
-  
   
   </ion-slides>
 
