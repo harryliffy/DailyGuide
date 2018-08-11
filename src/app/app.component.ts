@@ -11,6 +11,7 @@ import { ListPage } from '../pages/list/list';
 import { AboutPage } from '../pages/about/about';
 import { LoginPage } from '../pages/login/login';
 import { MarchPage } from '../pages/march/march';
+import { SettingPage } from '../pages/setting/setting';
 
 import { MonthPage } from '../pages/month/month';// import { FebruaryPage} from  '../pages/february/february';
 /* */
@@ -70,4 +71,9 @@ export class MyApp {
     this.nav.setRoot(MonthPage);
     this.menuCtrl.toggle();
   }
+  
+ navSettingPage(){
+  this.nav.setRoot(SettingPage);
+  this.menuCtrl.toggle();
+}
 }

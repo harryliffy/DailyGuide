@@ -5,8 +5,8 @@
   Ionic pages and navigation.
 -->
 
-<ion-header color="title">
-    <ion-navbar >
+<ion-header >
+    <ion-navbar color="baseblue">
       <ion-title>{{items.month}} {{items.id}}</ion-title>
        <ion-buttons right>
           <button ion-button icon-only>
@@ -22,15 +22,17 @@
   
   
   <ion-content style="background-image:url(../assets/imgs/home.png);background-size:contain;" >
-      <ion-card >
-          <h2 padding >{{items.title}}</h2><hr>
-          <ion-item>
+      <ion-card  *ngIf="items.month=='January'" class="lightbg" >
+     
+          <h2 class="headertext " padding >{{items.title}}</h2>
+          <img src="../assets/imgs/jan1.png" />
+          <ion-item class="darkbg">
             <ion-avatar item-start>
                 <img src="../../assets/imgs/number{{items.id}}.png">
             </ion-avatar>
             
-            <p>SC:PSALM 100:1-5 </p>
-            <p>KV:I THESSALONIANS 5:18 </p>
+            <p class="headertextb">SC:PSALM 100:1-5 </p>
+            <p class="headertext">KV:I THESSALONIANS 5:18 </p>
           </ion-item>
         <ion-grid>
           <ion-row>
@@ -45,6 +47,7 @@
 <br>
 <p>{{items.prayer}}</p>
           </ion-card-content>
+          
         
           <ion-row>
             <ion-col>

@@ -17,27 +17,24 @@ page-january {
           
  }
     .jan-glass{
+        background-image:url('../assets/imgs/home.png');
         background-color:#ffffffe8 ;
-        color:#21518f !important;
+      //  $color:"bluebase" !important;
     }
 
  .months-glass{
-        background-color: #f3f3f3bd !important;
-    color:#1b3d6b !important;
+        background-color: #f3f3f3fa;
+    color:#001c41 !important;
 }
- .months-glass,h2,{
+ .months-glass,span,{
 
-    color:#1b3d6b !important;
-    font-weight: 700;
-}
+   // color:#1b3d6b !important;
 
- .months-glass,p{
+ }
 
-    color:#243dcc !important;
-}
- .months-glass:hover , .months-glass:hover>h2:hover{
-        background-color:#8696f18f !important;
-    color:#cad8eb;
+ .months-glass:hover , .months-glass>span:hover{
+      background-color:#1b3d6b4a ;
+    color:#fff;
 }
     }
 

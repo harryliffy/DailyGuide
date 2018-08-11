@@ -7,7 +7,7 @@ import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { LoginPage } from '../pages/login/login';
 import { JanuaryPage} from '../pages/january/january';
-import { January1Page} from '../pages/january1/january1';
+import { SettingPage} from '../pages/setting/setting';
 import { ListPage } from '../pages/list/list';
 import { FebruaryPage } from '../pages/february/february';
 import { MarchPage } from '../pages/march/march';
@@ -27,7 +27,7 @@ import { CalenderDataProvider } from '../providers/calender-data/calender-data';
     AboutPage,
     ListPage,
     JanuaryPage,
-    January1Page,
+    SettingPage,
     FebruaryPage,
     LoginPage,
     DetailsPage,
@@ -47,7 +47,7 @@ import { CalenderDataProvider } from '../providers/calender-data/calender-data';
     AboutPage,
     ListPage,
     JanuaryPage,
-    January1Page,
+    SettingPage,
     FebruaryPage,
     LoginPage,
     DetailsPage,

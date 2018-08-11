@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the DetailsPage page.
+ * Generated class for the SettingPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,21 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-details',
-  templateUrl: 'details.html',
+  selector: 'page-setting',
+  templateUrl: 'setting.html',
 })
-    
-export class DetailsPage {
-items:any;
+export class SettingPage {
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-   
-       this.items=this.navParams.get('data')
-      
-    console.log(this.items);
   }
 
   ionViewDidLoad() {
-
+    console.log('ionViewDidLoad SettingPage');
   }
 
 }
